@@ -20,7 +20,7 @@ function SparrowLogo() {
       alignItems: "center",
       justifyContent: "center",
       fontSize: 28,
-      boxShadow: colors.shadows?.teal || "0 0 20px rgba(13,148,136,0.4)",
+      boxShadow: "0 0 20px rgba(13,148,136,0.4)",
       marginBottom: "1.5rem",
     }}>
       🐦
