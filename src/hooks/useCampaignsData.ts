@@ -9,12 +9,12 @@ import { useState, useEffect } from "react";
 import { Campaign, campaignsAPI } from "@/lib/api";
 import { MOCK_CAMPAIGNS } from "@/lib/mockData";
 
-const USE_MOCK = true;
+const USE_MOCK = false;
 
 export function useCampaignsData(pageId?: string) {
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [error,     setError]     = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   const fetchCampaigns = async () => {
     setIsLoading(true);

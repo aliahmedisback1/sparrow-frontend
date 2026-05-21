@@ -10,12 +10,12 @@ import { useState, useEffect } from "react";
 import { Page, pagesAPI } from "@/lib/api";
 import { MOCK_PAGES } from "@/lib/mockData";
 
-const USE_MOCK = true; // ← غيّرها false عند توفر الباكيند
+const USE_MOCK = false; // ← غيّرها false عند توفر الباكيند
 
 export function usePagesData() {
-  const [pages,     setPages]     = useState<Page[]>([]);
+  const [pages, setPages] = useState<Page[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [error,     setError]     = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   const fetchPages = async () => {
     setIsLoading(true);

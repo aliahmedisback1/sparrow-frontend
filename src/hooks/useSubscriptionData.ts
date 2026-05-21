@@ -8,12 +8,12 @@ import { useState, useEffect } from "react";
 import { Subscription, subscriptionAPI } from "@/lib/api";
 import { MOCK_SUBSCRIPTION } from "@/lib/mockData";
 
-const USE_MOCK = true;
+const USE_MOCK = false;
 
 export function useSubscriptionData() {
   const [subscription, setSubscription] = useState<Subscription | null>(null);
-  const [isLoading,    setIsLoading]    = useState(true);
-  const [error,        setError]        = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetch = async () => {

@@ -7,7 +7,7 @@
 import { useState, useEffect } from "react";
 import { AdminStats, UserAdminView, adminAPI } from "@/lib/api";
 
-const USE_MOCK = true;
+const USE_MOCK = false;
 
 // بيانات وهمية للأدمن
 const MOCK_ADMIN_STATS: AdminStats = {

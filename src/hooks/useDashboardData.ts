@@ -9,20 +9,20 @@ import { useEffect, useState } from "react";
 import { userAPI, UserProfile, UserStats } from "@/lib/api";
 import { MOCK_USER, MOCK_STATS } from "@/lib/mockData";
 
-const USE_MOCK = true; // ← غيّرها false عند توفر الباكيند
+const USE_MOCK = false; // ← غيّرها false عند توفر الباكيند
 
 interface DashboardData {
-  user:      UserProfile | null;
-  stats:     UserStats | null;
+  user: UserProfile | null;
+  stats: UserStats | null;
   isLoading: boolean;
-  error:     string | null;
+  error: string | null;
 }
 
 export function useDashboardData(): DashboardData {
-  const [user,      setUser]      = useState<UserProfile | null>(null);
-  const [stats,     setStats]     = useState<UserStats | null>(null);
+  const [user, setUser] = useState<UserProfile | null>(null);
+  const [stats, setStats] = useState<UserStats | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [error,     setError]     = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchAll = async () => {
