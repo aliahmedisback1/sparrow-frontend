@@ -1,137 +1,154 @@
 /**
  * الهوية البصرية لمشروع Sparrow
- * كل الألوان والخطوط والأحجام من هنا فقط
- * أي تعديل هنا ينعكس على كامل التطبيق
+ * نسخة معدلة لتناسب:
+ * البرتقالي الأساسي #F7941D
+ * الأسود #000000
+ * خط Tajawal
  */
 
 export const colors = {
   // --- الألوان الأساسية ---
   primary: {
-    teal:        "#0D9488", // تركواز — اللون الرئيسي
-    tealLight:   "#14B8A6",
-    tealDark:    "#0F766E",
+    orange: "#F7941D", // اللون الرئيسي
+    orangeLight: "#FFB347",
+    orangeDark: "#D97706",
   },
 
   // --- الألوان الثانوية ---
   accent: {
-    green:       "#10B981", // أخضر للنجاح والإيجابيات
-    greenLight:  "#34D399",
-    blue:        "#3B82F6", // أزرق للمعلومات
-    blueLight:   "#60A5FA",
-    royal:       "#1E3A8A", // أزرق ملكي غامق للعناوين والتأكيد
-    royalLight:  "#1D4ED8",
+    amber: "#FDBA74",
+    gold: "#FBBF24",
+    charcoal: "#111111",
+    charcoalSoft: "#1A1A1A",
+    gray: "#2A2A2A",
+    grayLight: "#3A3A3A",
   },
 
   // --- الخلفيات ---
   background: {
-    base:        "#0A0F1E", // خلفية داكنة رئيسية
-    surface:     "#0F172A", // بطاقات وعناصر
-    elevated:    "#1E293B", // عناصر مرفوعة (modals, dropdowns)
-    border:      "#1E293B", // حدود العناصر
-    borderLight: "#334155", // حدود أكثر وضوحاً
+    base: "#000000", // الخلفية الرئيسية
+    surface: "#0F0F0F", // الكروت والعناصر
+    elevated: "#171717", // العناصر المرتفعة
+    border: "#262626",
+    borderLight: "#3F3F46",
   },
 
   // --- النصوص ---
   text: {
-    primary:   "#F1F5F9", // النص الرئيسي
-    secondary: "#94A3B8", // نص ثانوي
-    muted:     "#475569",  // نص خافت
-    inverse:   "#0A0F1E", // نص على خلفيات فاتحة
+    primary: "#FFFFFF",
+    secondary: "#D4D4D8",
+    muted: "#71717A",
+    inverse: "#000000",
   },
 
   // --- حالات النظام ---
   status: {
-    success:     "#10B981",
-    successBg:   "#064E3B",
-    warning:     "#F59E0B",
-    warningBg:   "#451A03",
-    error:       "#EF4444",
-    errorBg:     "#450A0A",
-    info:        "#3B82F6",
-    infoBg:      "#1E3A5F",
+    success: "#22C55E",
+    successBg: "#052E16",
+
+    warning: "#F7941D",
+    warningBg: "#451A03",
+
+    error: "#EF4444",
+    errorBg: "#450A0A",
+
+    info: "#38BDF8",
+    infoBg: "#082F49",
   },
 
-  // --- ألوان الإحصائيات (مرتبة) ---
+  // --- ألوان الرسوم والإحصائيات ---
   charts: [
-    "#0D9488", // تركواز
-    "#3B82F6", // أزرق
-    "#10B981", // أخضر
-    "#1E3A8A", // ملكي
-    "#14B8A6", // تركواز فاتح
-    "#6366F1", // بنفسجي
+    "#F7941D",
+    "#FFB347",
+    "#FBBF24",
+    "#FFFFFF",
+    "#71717A",
+    "#2A2A2A",
   ],
 } as const;
 
 
 export const fonts = {
-  // خط العناوين — حاد ومميز
-  display: "'Syne', sans-serif",
+  // خط العناوين
+  display: "'Tajawal', sans-serif",
 
-  // خط الجسم — واضح وقابل للقراءة
-  body: "'DM Sans', sans-serif",
+  // خط النصوص
+  body: "'Tajawal', sans-serif",
 
   // خط الأرقام والكود
   mono: "'JetBrains Mono', monospace",
 
-  // روابط Google Fonts للاستيراد
+  // Google Fonts
   googleFontsUrl:
-    "https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+    "https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap",
 } as const;
 
 
 export const spacing = {
-  xs:  "0.25rem",  // 4px
-  sm:  "0.5rem",   // 8px
-  md:  "1rem",     // 16px
-  lg:  "1.5rem",   // 24px
-  xl:  "2rem",     // 32px
-  xxl: "3rem",     // 48px
+  xs: "0.25rem", // 4px
+  sm: "0.5rem",  // 8px
+  md: "1rem",    // 16px
+  lg: "1.5rem",  // 24px
+  xl: "2rem",    // 32px
+  xxl: "3rem",    // 48px
 } as const;
 
 
 export const radius = {
-  sm:   "0.375rem", // 6px
-  md:   "0.75rem",  // 12px
-  lg:   "1rem",     // 16px
-  xl:   "1.5rem",   // 24px
-  full: "9999px",   // دائري كامل
+  sm: "0.5rem",   // 8px
+  md: "0.875rem", // 14px
+  lg: "1.25rem",  // 20px
+  xl: "1.75rem",  // 28px
+  full: "9999px",
 } as const;
 
 
 export const shadows = {
-  // ظل ملون بالتركواز لإبراز العناصر المهمة
-  teal:  "0 0 20px rgba(13, 148, 136, 0.3)",
-  blue:  "0 0 20px rgba(59, 130, 246, 0.2)",
-  card:  "0 4px 24px rgba(0, 0, 0, 0.4)",
-  modal: "0 20px 60px rgba(0, 0, 0, 0.7)",
+  // Glow برتقالي
+  orange: "0 0 25px rgba(247, 148, 29, 0.35)",
+
+  // ظل الكروت
+  card: "0 8px 30px rgba(0, 0, 0, 0.45)",
+
+  // ظل النوافذ
+  modal: "0 25px 80px rgba(0, 0, 0, 0.75)",
 } as const;
 
 
 // متغيرات CSS — تُستخدم في globals.css
 export const cssVariables = `
   :root {
-    --color-primary:        ${colors.primary.teal};
-    --color-primary-light:  ${colors.primary.tealLight};
-    --color-primary-dark:   ${colors.primary.tealDark};
-    --color-accent-green:   ${colors.accent.green};
-    --color-accent-blue:    ${colors.accent.blue};
-    --color-royal:          ${colors.accent.royal};
+    --color-primary:        ${colors.primary.orange};
+    --color-primary-light:  ${colors.primary.orangeLight};
+    --color-primary-dark:   ${colors.primary.orangeDark};
+
+    --color-accent-amber:   ${colors.accent.amber};
+    --color-accent-gold:    ${colors.accent.gold};
+    --color-charcoal:       ${colors.accent.charcoal};
+
     --color-bg-base:        ${colors.background.base};
     --color-bg-surface:     ${colors.background.surface};
     --color-bg-elevated:    ${colors.background.elevated};
+
     --color-border:         ${colors.background.border};
     --color-border-light:   ${colors.background.borderLight};
+
     --color-text-primary:   ${colors.text.primary};
     --color-text-secondary: ${colors.text.secondary};
     --color-text-muted:     ${colors.text.muted};
+
     --color-success:        ${colors.status.success};
     --color-warning:        ${colors.status.warning};
     --color-error:          ${colors.status.error};
+    --color-info:           ${colors.status.info};
+
     --font-display:         ${fonts.display};
     --font-body:            ${fonts.body};
     --font-mono:            ${fonts.mono};
-    --shadow-teal:          ${shadows.teal};
+
+    --shadow-orange:        ${shadows.orange};
     --shadow-card:          ${shadows.card};
+
     --radius-md:            ${radius.md};
     --radius-lg:            ${radius.lg};
   }
